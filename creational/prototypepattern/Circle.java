@@ -1,10 +1,14 @@
-package creational.factorypattern;
+package creational.prototypepattern;
 
 import java.util.logging.Logger;
 
-public class Circle implements Shape {
+public class Circle extends Shape {
 
     Logger logger = Logger.getLogger(getClass().getName());
+
+    public Circle() {
+        type = "Circle";
+    }
 
     @Override
     public void draw() {
